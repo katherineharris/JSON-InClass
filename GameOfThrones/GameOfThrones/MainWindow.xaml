@@ -1,0 +1,21 @@
+﻿<Window x:Class="GameOfThrones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfThrones"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/episodes/1/got-s1-dany-pull-quote.jpg/_jcr_content/renditions/original" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBlock x:Name="quote" Margin="375,10,0,215" TextWrapping="Wrap" Grid.Column="1" HorizontalAlignment="Left" Width="407" Foreground="White"/>
+    </Grid>
+</Window>
